@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="to_do list vs5.css">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-beta2-web/css/all.css">
+</head>
+<body>
+    <div class="whole">
+        <div id="date">
+          <div id="total">
+            <div id="da"></div>
+            <div id="month">
+              <div id="mi">JAN</div> 
+              <div id="year"></div>
+            </div>
+          </div>
+          <div id="day">TUESDAY</div>
+        </div>
+        <!-- <label for="">Search</label> -->
+        <input type="text" onkeyup="search()"  id="search_item" placeholder="Search For Activities  " class="bi bi-search">
+        <div class="newlist">
+          <li onclick="show_all()">All</li>
+          <li onclick="filter_completed()">Completed</li>
+          <li onclick="uncompleted()">Uncompleted</li>
+          <!-- <li onclick="sortAlphabetically()">sort a-z</li> -->
+        </div>
+        <div id="list" class="list">
+          
+          <!-- <li class="items">Buy new sweatshirt <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+            <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+            <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+          </svg></li>
+          <li class="items">Begin promotional phase <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+            <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+            <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+          </svg></li>
+          <li class="items">Read an article <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          </svg></li>
+          <li class="items">Try not to fall asleep <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          </svg></li>
+          <li class="items">Watch 'Sherlock' <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          </svg></li>
+          <li class="items">Begin QA for the product <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          </svg></li>
+          <li class="items">Go for a work <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z "/>
+          </svg></li> -->
+        </div>
+        <div class="add" id="add_button">
+          <!-- Trigger/Open The Modal -->  
+            <!-- <i  class="fa fa-plus" id="showForm" class="boxAppear" aria-hidden="true" ></i> -->
+            <i  class="fa fa-plus" id="showForm" aria-hidden="true" ></i>
+        </div>
+      </div> 
+      <div  id="newData">
+          <input type="text" id="input" placeholder="Add a new Task"><br>
+          <button type="" onclick="add_task()">Add</button>
+          <div id="msg"></div>
+          <input type="text"  placeholder="Edit your task" id="edit"><br>
+          <button type="" onclick="updatePost2()">Edit</button>
+      </div>
+        <!-- The Modal -->
+      <!-- <button onclick="sortReversed()">sort z-a</button> -->
+      <script src="date.js"></script>
+      <script src="to_do list vs 5.js"></script>
+</body>
+</html>
